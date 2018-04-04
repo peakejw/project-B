@@ -21,13 +21,13 @@
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="wrap_content"
+                android:layout_width="45dp"
                 android:layout_height="wrap_content"
                 android:text="ID:   "
                 android:textSize="18sp" />
 
             <TextView
-                android:layout_width="155dp"
+                android:layout_width="138dp"
                 android:layout_height="wrap_content"
                 android:text="Product: "
                 android:textSize="18sp" />
@@ -41,7 +41,7 @@
 
             <TextView
                 android:id="@+id/textView5"
-                android:layout_width="91dp"
+                android:layout_width="117dp"
                 android:layout_height="wrap_content"
                 android:text="Price: "
                 android:textSize="18sp" />
@@ -51,34 +51,33 @@
             android:layout_width="262dp"
             android:layout_height="match_parent">
 
-            <EditText
+            <TextView
                 android:id="@+id/TVid"
-                android:layout_width="52dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName" />
+                android:text="@string/emptystring1"
+                android:textSize="18sp" />
 
-            <EditText
+            <TextView
                 android:id="@+id/TVproduct"
-                android:layout_width="105dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName" />
+                android:text="@string/emptystring2"
+                android:textSize="18sp" />
 
-            <EditText
+            <TextView
                 android:id="@+id/TVquantity"
-                android:layout_width="84dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName" />
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/emptyString3"
+                android:textSize="18sp" />
 
-            <EditText
-                android:id="@+id/TVprice"
-                android:layout_width="97dp"
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName" />
-
+                android:text="@string/emptyString4"
+                android:textSize="18sp" />
         </TableRow>
 
         <TableRow
