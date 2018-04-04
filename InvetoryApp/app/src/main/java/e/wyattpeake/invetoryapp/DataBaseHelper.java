@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DataBaseHelper extends SQLiteOpenHelper {
 
     public static final int DATABASE_VERSION = 1;
-    public static final String DATABASE_NAME = "synonym.db";
+    public static final String DATABASE_NAME = "product.db";
     private static final String TABLE_PRODUCT = "product";
     private static final String COLUMN_ID = "id";
     private static final String COLUMN_PRODUCT_NAME = "productName";
