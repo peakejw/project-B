@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Invetory App</string>
+    <string name="emptystring1" />
+    <string name="emptystring2" />
+    <string name="emptyString3" />
+    <string name="emptyString4" />
 </resources>

@@ -2,38 +2,33 @@ package e.wyattpeake.invetoryapp;
 
 public class Product {
 
-    private int id, quantity;
-    private float price;
+    private String id, quantity;
+    private String price;
     private String productName;
 
-    public Product(int id, int quantity, float price, String productName) {
-        this.id = id;
-        this.quantity = quantity;
-        this.price = price;
-        this.productName = productName;
-    }
 
-    public int getId() {
+
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public int getQuantity() {
+    public String getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
+    public void setQuantity(String quantity) {
         this.quantity = quantity;
     }
 
-    public float getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
