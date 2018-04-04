@@ -7,7 +7,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-    //vasu and wyatt
+    //vasu and wyatt merge
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
