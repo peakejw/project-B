@@ -98,7 +98,7 @@
         android:text="Uptdate" />
 
     <Button
-        android:id="@+id/addNewButton"
+        android:id="@+id/BaddNew"
         android:layout_width="match_parent"
         android:layout_height="83dp"
         android:onClick="onButtonClick"

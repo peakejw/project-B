@@ -41,7 +41,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     }
 
-    public void insertContact(Product p) {
+    public void insertProduct(Product p) {
         db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
 

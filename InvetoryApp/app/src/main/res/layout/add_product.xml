@@ -3,4 +3,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:lineSpacingExtra="14sp"
+            android:text="Enter Product name:"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/TFenterName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="product name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Enter Quantity:"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/TFenterQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="quantity 000"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:text="Enter Product Price:"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/TFenterPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Price $ 0.00"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/Badd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonClick"
+            android:text="Add" />
+    </LinearLayout>
 </LinearLayout>
