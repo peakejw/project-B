@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".ManageProducts"></activity>
         <activity android:name=".AddProduct"></activity>
+        <activity android:name=".WasAdded"></activity>
     </application>
 
 </manifest>
