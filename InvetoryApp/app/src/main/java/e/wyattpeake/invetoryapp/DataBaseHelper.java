@@ -69,9 +69,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                 a = cursor.getString(1);
                 if(a.equalsIgnoreCase(word)){
                     product.setId(cursor.getString(0));
-                    product.setId(cursor.getString(1));
-                    product.setId(cursor.getString(2));
-                    product.setId(cursor.getString(3));
+                    product.setProductName(cursor.getString(1));
+                    product.setQuantity(cursor.getString(2));
+                    product.setPrice(cursor.getString(3));
                 }
 
             } while (cursor.moveToNext());

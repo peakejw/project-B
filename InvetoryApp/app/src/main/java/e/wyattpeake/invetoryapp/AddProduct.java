@@ -1,13 +1,15 @@
 package e.wyattpeake.invetoryapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.ThemedSpinnerAdapter;
 import android.view.View;
 import android.widget.EditText;
 
 public class AddProduct extends Activity {
     DataBaseHelper helper = new DataBaseHelper(this);
-    Product product = new Product();
+   public Product product = new Product();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,10 @@ public class AddProduct extends Activity {
             product.setQuantity(b);
 
             helper.insertProduct(product);
+
+            Intent i = new Intent(AddProduct.this, WasAdded.class);
+            i.putExtra("product", product.getProductName() );
+            startActivity(i);
         }
 
     }

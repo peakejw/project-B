@@ -4,4 +4,8 @@
     <string name="emptystring2" />
     <string name="emptyString3" />
     <string name="emptyString4" />
+    <string name="emptyStringID" />
+    <string name="emptyStringAddProduct" />
+    <string name="emptyStringAddquantity" />
+    <string name="emptyStringAddPrice" />
 </resources>
