@@ -93,21 +93,21 @@
     <Button
         android:id="@+id/updateButton"
         android:layout_width="match_parent"
-        android:layout_height="85dp"
+        android:layout_height="wrap_content"
         android:onClick="onButtonClick"
         android:text="Uptdate" />
 
     <Button
         android:id="@+id/BaddNew"
         android:layout_width="match_parent"
-        android:layout_height="83dp"
+        android:layout_height="wrap_content"
         android:onClick="onButtonClick"
         android:text="Add New" />
 
     <Button
         android:id="@+id/removeButton"
         android:layout_width="match_parent"
-        android:layout_height="95dp"
+        android:layout_height="wrap_content"
         android:onClick="OnButtonClick"
         android:text="Remove" />
 
