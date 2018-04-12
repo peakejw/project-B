@@ -7,7 +7,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-    //vasu and wyatt merge
+    //vasu and wyatt ahmed
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
