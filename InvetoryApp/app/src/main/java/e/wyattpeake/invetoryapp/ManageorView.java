@@ -5,20 +5,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
-
-    //vasu and wyatt ahmed
+public class ManageorView extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_manageor_view);
     }
+
 
     public void onButtonClick (View v){
 
-        if(v.getId() == R.id.Blogin){
-            Intent i = new Intent(MainActivity.this, LoginActivity.class);
+        if(v.getId() == R.id.SignInButton){
+            Intent i = new Intent(ManageorView.this, AddProduct.class);
             startActivity(i);
         }
 
