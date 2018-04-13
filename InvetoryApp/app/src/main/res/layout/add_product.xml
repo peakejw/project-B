@@ -26,22 +26,6 @@
             android:inputType="textPersonName" />
 
         <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Enter Product ID:"
-            android:textColor="#4A148C"
-            android:textSize="24sp" />
-
-        <EditText
-            android:id="@+id/TFenterID"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="ID #"
-            android:inputType="textPersonName" />
-
-        <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
