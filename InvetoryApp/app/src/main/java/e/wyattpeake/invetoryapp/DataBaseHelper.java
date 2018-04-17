@@ -53,6 +53,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         values.put(COLUMN_PRODUCT_NAME, p.getProductName());
         values.put(COLUMN_QUANTITY, p.getQuantity());
         values.put(COLUMN_PRICE, p.getPrice());
+        values.put(COLUMN_EXPIRATION, p.getExpiration());
+        values.put(COLUMN_LOCATION, p.getLocation());
 
         db.insert(TABLE_PRODUCT, null, values);
         db.close();
