@@ -60,6 +60,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     }
 
+    //searches by product name
+
     public Product search(String word) {
         db = this.getReadableDatabase();
         Product product = new Product();
