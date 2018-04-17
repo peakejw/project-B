@@ -11,7 +11,20 @@ public class LogInActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
+    }
+    public void onButtonClick (View v){
 
+        if(v.getId() == R.id.BSignIn){
+            Intent i = new Intent(LogInActivity.this, ManageorView.class);
+            startActivity(i);
+        }
+
+        if(v.getId() == R.id.BSignUp){
+            Intent i = new Intent(LogInActivity.this, ManageorView.class);
+            startActivity(i);
+        }
+
+    }
 
             }
-        }
+
