@@ -1,5 +1,6 @@
 package e.wyattpeake.invetoryapp;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -34,6 +35,17 @@ public class PasswordDataBase extends SQLiteOpenHelper {
         String query = "drop table if EXISTS " + TABLE_NAME;
         db.execSQL(query);
         this.onCreate(db);
+
+
+    }
+
+    public void insertUser(UserName u) {
+        db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+
+        values.put(COLUMN_USERNAME, u.getUserName());
+        values.put(COLUMN_PASSWORD, u.getPassword());
+
 
 
     }
