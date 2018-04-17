@@ -34,6 +34,14 @@ public class AddProduct extends Activity {
             b = a.getText().toString();
             product.setQuantity(b);
 
+            a = (EditText) findViewById(R.id.TFLocation);
+            b = a.getText().toString();
+            product.setQuantity(b);
+
+            a = (EditText) findViewById(R.id.TFExpiration);
+            b = a.getText().toString();
+            product.setQuantity(b);
+
             helper.insertProduct(product);
 
             Intent i = new Intent(AddProduct.this, WasAdded.class);

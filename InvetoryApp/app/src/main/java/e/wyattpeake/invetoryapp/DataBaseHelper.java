@@ -16,10 +16,13 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_PRODUCT_NAME = "productName";
     private static final String COLUMN_QUANTITY = "quantity";
     private static final String COLUMN_PRICE = "price";
+    private static final String COLUMN_EXPIRATION = "expiration";
+    private static final String COLUMN_LOCATION = "location";
+
     SQLiteDatabase db;
 
     public static final String Table_Create = "create table "+ TABLE_PRODUCT + " (id integer primary key autoincrement, " +
-            "productName text not null, quantity text not null, price text not null)";
+            "productName text not null, quantity text not null, price text not null, expiration text not null, location text not null)";
 
     public DataBaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -57,6 +60,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     }
 
+    //searches by  name
+
     public Product search(String word) {
         db = this.getReadableDatabase();
         Product product = new Product();
@@ -72,6 +77,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                     product.setProductName(cursor.getString(1));
                     product.setQuantity(cursor.getString(2));
                     product.setPrice(cursor.getString(3));
+                    product.setExpiration(cursor.getString(4));
+                    product.setLocation(cursor.getString(5));
+
                 }
 
             } while (cursor.moveToNext());

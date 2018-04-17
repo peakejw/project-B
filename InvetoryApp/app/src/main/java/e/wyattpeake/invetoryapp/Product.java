@@ -5,8 +5,25 @@ public class Product {
     private String id, quantity;
     private String price;
     private String productName;
+    private String location;
+    private String expiration;
 
 
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getExpiration() {
+        return expiration;
+    }
+
+    public void setExpiration(String expiration) {
+        this.expiration = expiration;
+    }
 
     public String getId() {
         return id;
