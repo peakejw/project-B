@@ -79,8 +79,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                     product.setProductName(cursor.getString(1));
                     product.setQuantity(cursor.getString(2));
                     product.setPrice(cursor.getString(3));
-                    product.setExpiration(cursor.getString(4));
-                    product.setLocation(cursor.getString(5));
+                   // product.setExpiration(cursor.getString(4));
+                   // product.setLocation(cursor.getString(5));
 
                 }
 
