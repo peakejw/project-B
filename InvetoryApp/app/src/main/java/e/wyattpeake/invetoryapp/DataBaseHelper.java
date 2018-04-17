@@ -60,7 +60,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     }
 
-    //searches by product name
+    //searches by  name
 
     public Product search(String word) {
         db = this.getReadableDatabase();
