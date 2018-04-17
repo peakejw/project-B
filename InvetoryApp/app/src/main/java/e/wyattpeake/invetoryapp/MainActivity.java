@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     public void onButtonClick (View v){
 
         if(v.getId() == R.id.Blogin){
-            Intent i = new Intent(MainActivity.this, AddProduct.class);
+            Intent i = new Intent(MainActivity.this, LogInActivity.class);
             startActivity(i);
         }
 

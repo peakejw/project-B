@@ -26,7 +26,7 @@
         <activity android:name=".WasAdded" />
         <activity android:name=".ManageorView" />
         <activity android:name=".RemoveProduct" />
-        <activity android:name=".LogInActivity"></activity>
+        <activity android:name=".LogInActivity" />
     </application>
 
 </manifest>
