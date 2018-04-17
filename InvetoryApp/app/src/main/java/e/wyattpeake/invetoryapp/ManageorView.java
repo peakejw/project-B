@@ -16,7 +16,7 @@ public class ManageorView extends AppCompatActivity {
 
     public void onButtonClick (View v){
 
-        if(v.getId() == R.id.SignInButton){
+        if(v.getId() == R.id.ManageButton){
             Intent i = new Intent(ManageorView.this, AddProduct.class);
             startActivity(i);
         }

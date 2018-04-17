@@ -1,7 +1,9 @@
 package e.wyattpeake.invetoryapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class WasAdded extends Activity {
@@ -27,6 +29,13 @@ public class WasAdded extends Activity {
         tv.setText(product.getPrice());
 
 
+    }
+
+    public void OnButtonClick(View view){
+        if(view.getId() == R.id.Bok){
+            Intent i = new Intent(WasAdded.this, ManageProducts.class);
+            startActivity(i);
+        }
     }
 
 
