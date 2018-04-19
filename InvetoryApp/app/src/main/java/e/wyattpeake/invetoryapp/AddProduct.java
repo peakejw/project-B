@@ -19,6 +19,9 @@ public class AddProduct extends Activity {
 
     public void onButtonClick(View view) {
 
+        //add all elements to the product then sends them to the database also sends
+        //an intent to the wasAdded class to make sure it is added and correct
+
         if(view.getId() == R.id.Badd) {
 
             EditText a = (EditText) findViewById(R.id.TFenterName);
