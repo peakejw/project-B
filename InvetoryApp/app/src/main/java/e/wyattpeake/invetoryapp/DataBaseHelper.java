@@ -44,6 +44,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     }
 
+    //inserts product into the database
+
     public void insertProduct(Product p) {
         db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -62,7 +64,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     }
 
-    //searches by  name
+    //searches by  product name and returns a product class
 
     public Product search(String word) {
         db = this.getReadableDatabase();

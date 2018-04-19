@@ -10,6 +10,9 @@ public class WasAdded extends Activity {
     DataBaseHelper helper = new DataBaseHelper(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        //searches the database for the recently added class and displays that product
+        
         super.onCreate(savedInstanceState);
         setContentView(R.layout.was_added);
         String search =  getIntent().getStringExtra("product");
