@@ -51,7 +51,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
 
 
-        values.put(COLUMN_ID, p.getId());
+
         values.put(COLUMN_PRODUCT_NAME, p.getProductName());
         values.put(COLUMN_QUANTITY, p.getQuantity());
         values.put(COLUMN_PRICE, p.getPrice());
@@ -81,8 +81,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                     product.setProductName(cursor.getString(1));
                     product.setQuantity(cursor.getString(2));
                     product.setPrice(cursor.getString(3));
-                   // product.setExpiration(cursor.getString(4));
-                   // product.setLocation(cursor.getString(5));
+                    product.setExpiration(cursor.getString(4));
+                    product.setLocation(cursor.getString(5));
 
                 }
 
