@@ -22,8 +22,28 @@ public class WasAdded extends Activity {
 
 
 
-      TextView  tv = (TextView)findViewById(R.id.TVaddedProduct);
-        tv.setText(product.toString());
+      TextView  tv = (TextView)findViewById(R.id.TVLocation);
+        tv.setText(product.getLocation());
+
+        tv = (TextView)findViewById(R.id.TVid);
+        tv.setText(product.getId());
+
+        tv = (TextView)findViewById(R.id.TVname);
+        tv.setText(product.getProductName());
+
+        tv = (TextView)findViewById(R.id.TVPrice);
+        tv.setText(product.getPrice());
+
+        tv = (TextView)findViewById(R.id.TVQuantity);
+        tv.setText(product.getQuantity());
+
+        tv = (TextView)findViewById(R.id.TVExpiration);
+        tv.setText(product.getExpiration());
+
+
+
+
+
 
 
 
