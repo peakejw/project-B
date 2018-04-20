@@ -17,7 +17,7 @@ public class AddProduct extends Activity {
         setContentView(R.layout.add_product);
     }
 
-    public void onButtonClick(View view) {
+    public void onAddButtonClick(View view) {
 
         //add all elements to the product then sends them to the database also sends
         //an intent to the wasAdded class to make sure it is added and correct
@@ -39,11 +39,11 @@ public class AddProduct extends Activity {
 
             a = (EditText) findViewById(R.id.TFLocation);
             b = a.getText().toString();
-            product.setQuantity(b);
+            product.setLocation(b);
 
             a = (EditText) findViewById(R.id.TFExpiration);
             b = a.getText().toString();
-            product.setQuantity(b);
+            product.setExpiration(b);
 
             helper.insertProduct(product);
 
