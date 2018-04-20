@@ -27,6 +27,8 @@
         <activity android:name=".ManageorView" />
         <activity android:name=".RemoveProduct" />
         <activity android:name=".LogInActivity" />
+        <activity android:name=".viewinventory" />
+        <activity android:name=".ProductDescription" />
     </application>
 
 </manifest>

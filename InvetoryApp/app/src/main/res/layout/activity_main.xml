@@ -17,6 +17,7 @@
         android:layout_marginStart="148dp"
         android:layout_marginTop="8dp"
         android:onClick="onButtonClick"
+        android:background="#f18eff"
         android:text="Login"
 
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +25,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.847" />
+        app:layout_constraintVertical_bias="0.919" />
 
     <TextView
         android:id="@+id/textView6"
@@ -50,8 +51,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="288dp"
-        android:layout_height="215dp"
+        android:layout_width="304dp"
+        android:layout_height="122dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
@@ -62,7 +63,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.628"
+        app:layout_constraintVertical_bias="0.498"
         app:srcCompat="@drawable/warehouse" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="214dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="By: James Peake, Vasu Dhingani, Ahmed Alquffas, King Martin"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.721" />
 
 </android.support.constraint.ConstraintLayout>
