@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DataBaseHelper extends SQLiteOpenHelper {
 
-    public static final int DATABASE_VERSION = 1;
+    public static final int DATABASE_VERSION = 2;
     public static final String DATABASE_NAME = "product.db";
     private static final String TABLE_PRODUCT = "product";
     private static final String COLUMN_ID = "id";
@@ -50,8 +50,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
 
-
-
+        values.put(COLUMN_ID,p.getId());
         values.put(COLUMN_PRODUCT_NAME, p.getProductName());
         values.put(COLUMN_QUANTITY, p.getQuantity());
         values.put(COLUMN_PRICE, p.getPrice());
@@ -88,6 +87,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
             } while (cursor.moveToNext());
         }
+        db.close();
         return product;
 
 
