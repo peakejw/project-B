@@ -27,6 +27,9 @@
         <activity android:name=".ManageorView" />
         <activity android:name=".RemoveProduct" />
         <activity android:name=".LogInActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".AdminorUser" />
+        <activity android:name=".Update"></activity>
     </application>
 
 </manifest>
