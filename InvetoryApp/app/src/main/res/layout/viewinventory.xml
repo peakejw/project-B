@@ -8,7 +8,7 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="61dp"
-        android:text="            View Inventory"
+        android:text="View Inventory"
         android:textSize="25sp" />
 
     <TableLayout

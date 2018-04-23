@@ -23,5 +23,15 @@ public class ManageProducts extends Activity {
             startActivity(i);
         }
 
+        if(v.getId() == R.id.updateButton){
+            Intent i = new Intent(ManageProducts.this, Update.class);
+            startActivity(i);
+        }
+
+        if(v.getId() == R.id.removeButton){
+            Intent i = new Intent(ManageProducts.this, RemoveProduct.class);
+            startActivity(i);
+        }
+
     }
 }

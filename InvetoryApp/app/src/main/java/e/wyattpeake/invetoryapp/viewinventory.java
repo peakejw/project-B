@@ -1,7 +1,9 @@
 package e.wyattpeake.invetoryapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class viewinventory extends AppCompatActivity {
 
@@ -10,4 +12,5 @@ public class viewinventory extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.viewinventory);
     }
+
 }
