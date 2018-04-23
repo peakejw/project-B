@@ -17,19 +17,35 @@ public class WasAdded extends Activity {
         setContentView(R.layout.was_added);
         String search =  getIntent().getStringExtra("product");
         Product product = new Product();
-       product =  helper.search(search);
+        product =  helper.search(search);
 
-        TextView tv = (TextView)findViewById(R.id.TVidAdd);
+
+
+
+      TextView  tv = (TextView)findViewById(R.id.TVLocation);
+        tv.setText(product.getLocation());
+
+        tv = (TextView)findViewById(R.id.TVid);
         tv.setText(product.getId());
 
-         tv = (TextView)findViewById(R.id.TVproductAdd);
+        tv = (TextView)findViewById(R.id.TVname);
         tv.setText(product.getProductName());
 
-         tv = (TextView)findViewById(R.id.TVquantityAdd);
+        tv = (TextView)findViewById(R.id.TVPrice);
+        tv.setText(product.getPrice());
+
+        tv = (TextView)findViewById(R.id.TVQuantity);
         tv.setText(product.getQuantity());
 
-         tv = (TextView)findViewById(R.id.TVPriceAdd);
-        tv.setText(product.getPrice());
+        tv = (TextView)findViewById(R.id.TVExpiration);
+        tv.setText(product.getExpiration());
+
+
+
+
+
+
+
 
 
     }
