@@ -29,7 +29,7 @@
         app:layout_constraintVertical_bias="0.04" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/UserButton"
         android:layout_width="166dp"
         android:layout_height="60dp"
         android:layout_marginBottom="8dp"
@@ -39,14 +39,16 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="User"
+        android:onClick="onButtonClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintVertical_bias="0.6"
+        tools:ignore="OnClick" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/AdminButton"
         android:layout_width="166dp"
         android:layout_height="60dp"
         android:layout_marginBottom="8dp"
@@ -56,10 +58,12 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Administrator"
+        android:onClick="onButtonClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.337" />
+        app:layout_constraintVertical_bias="0.337"
+        tools:ignore="OnClick" />
 
 </android.support.constraint.ConstraintLayout>

@@ -2,6 +2,7 @@ package e.wyattpeake.invetoryapp;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -48,5 +49,31 @@ public class PasswordDataBase extends SQLiteOpenHelper {
 
 
 
+    }
+
+    //valid dates user password, takes in object of Username returns boolean
+
+    public  boolean validateUser(UserName user){
+        db = this.getReadableDatabase();
+
+        Cursor cursor = db.rawQuery("select * from "+ TABLE_NAME, null);
+        String a, b;
+
+        boolean valid = false;
+
+
+        if (cursor.moveToFirst()) {
+            do {
+                a = cursor.getString(1);
+                if(a.equalsIgnoreCase(user.getUserName())){
+                   b = cursor.getString(2);
+                   if( b.equals(user.getPassword())){
+                       valid = true;
+                    }
+                }
+
+            } while (cursor.moveToNext());
+        }
+        return valid;
     }
 }

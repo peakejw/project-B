@@ -20,6 +20,11 @@ public class ManageorView extends AppCompatActivity {
             Intent i = new Intent(ManageorView.this, AddProduct.class);
             startActivity(i);
         }
+        if(v.getId() == R.id.ViewButton){
+            Intent i = new Intent(ManageorView.this, viewinventory.class);
+            startActivity(i);
+        }
+
 
     }
 }
