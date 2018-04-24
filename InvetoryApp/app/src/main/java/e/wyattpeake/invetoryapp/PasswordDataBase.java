@@ -65,8 +65,11 @@ public class PasswordDataBase extends SQLiteOpenHelper {
         if (cursor.moveToFirst()) {
             do {
                 a = cursor.getString(1);
-                if(a.equalsIgnoreCase(user.getUserName()) && a.equals(user.getPassword())){
-                   valid = true;
+                if(a.equalsIgnoreCase(user.getUserName())){
+                   b = cursor.getString(2);
+                   if( b.equals(user.getPassword())){
+                       valid = true;
+                    }
                 }
 
             } while (cursor.moveToNext());
