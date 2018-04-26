@@ -25,6 +25,12 @@ public class LogInActivity extends Activity {
             startActivity(i);
         }
 
+//        if(v.getId() == R.id.Blogin){
+//            Intent i = new Intent(LogInActivity.this, A.class);
+//            startActivity(i);
+//            }
+//
+//        }
     }
 
             }

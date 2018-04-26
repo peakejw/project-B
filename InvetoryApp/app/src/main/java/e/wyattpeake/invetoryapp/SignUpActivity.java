@@ -18,7 +18,7 @@ public class SignUpActivity extends Activity {
 
     public void onButtonClick(View view) {
 
-        if (view.getId() == R.id.Bcreate) {
+        if (view.getId() == R.id.BCreate) {
 
             String confirm;
 
