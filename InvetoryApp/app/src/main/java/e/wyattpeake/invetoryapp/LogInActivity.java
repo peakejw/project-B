@@ -5,8 +5,11 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class LogInActivity extends Activity {
+   private UserName user = new UserName();
+    PasswordDataBase helper = new PasswordDataBase(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,8 +19,25 @@ public class LogInActivity extends Activity {
     public void onButtonClick (View v){
 
         if(v.getId() == R.id.BSignIn){
-            Intent i = new Intent(LogInActivity.this, ManageorView.class);
-            startActivity(i);
+
+
+
+            EditText a = (EditText) findViewById(R.id.TFUsername);
+
+            String b = a.getText().toString();
+            user.setUserName(b);
+
+            a = (EditText) findViewById(R.id.TFpassword);
+
+            b = a.getText().toString();
+            user.setPassword(b);
+
+            if(helper.validateUser(user) == true) {
+
+
+                Intent i = new Intent(LogInActivity.this, ManageorView.class);
+                startActivity(i);
+            }
         }
 
         if(v.getId() == R.id.BSignUp){

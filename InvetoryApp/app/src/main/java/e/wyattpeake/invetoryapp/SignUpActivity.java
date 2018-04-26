@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class SignUpActivity extends Activity {
+    PasswordDataBase helper = new PasswordDataBase(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +24,7 @@ public class SignUpActivity extends Activity {
             String confirm;
 
 
-            PasswordDataBase helper = new PasswordDataBase(this);
+
             UserName userName = new UserName();
 
             EditText a = (EditText) findViewById(R.id.TfUsername);
