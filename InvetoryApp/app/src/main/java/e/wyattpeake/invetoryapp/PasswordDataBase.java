@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class PasswordDataBase extends SQLiteOpenHelper {
 
-    public static final int DATABASE_VERSION = 1;
+    public static final int DATABASE_VERSION = 2;
     public static final String DATABASE_NAME = "password.db";
     private static final String TABLE_NAME = "password";
     private static final String COLUMN_ID = "id";
@@ -44,8 +44,14 @@ public class PasswordDataBase extends SQLiteOpenHelper {
         db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
 
+        values.put(COLUMN_ID, u.getId());
+
         values.put(COLUMN_USERNAME, u.getUserName());
         values.put(COLUMN_PASSWORD, u.getPassword());
+
+        db.insert(TABLE_NAME, null, values);
+
+        db.close();
 
 
 
