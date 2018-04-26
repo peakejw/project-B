@@ -29,7 +29,8 @@
         <activity android:name=".LogInActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".AdminorUser" />
-        <activity android:name=".Update"></activity>
+        <activity android:name=".Update" />
+        <activity android:name=".ProductUpdate"></activity>
     </application>
 
 </manifest>
