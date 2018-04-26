@@ -40,14 +40,6 @@ public class WasAdded extends Activity {
         tv = (TextView)findViewById(R.id.TVExpiration);
         tv.setText(product.getExpiration());
 
-
-
-
-
-
-
-
-
     }
 
     public void OnButtonClick(View view){
