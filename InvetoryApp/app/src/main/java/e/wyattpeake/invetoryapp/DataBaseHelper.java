@@ -93,4 +93,10 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     }
 
+    public Integer deleteProduct (Product product){
+        String id = product.getId();
+        db = this.getWritableDatabase();
+       return db.delete(TABLE_PRODUCT, "ID = ?", new String[] {id});
+    }
+
 }
