@@ -94,4 +94,37 @@
 
     </TableLayout>
 
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/TVid2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emptystring1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/TVproduct2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emptystring2"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/TVquantity2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/emptyString3"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emptyString4"
+            android:textSize="18sp" />
+    </android.support.v7.widget.RecyclerView>
+
 </LinearLayout>

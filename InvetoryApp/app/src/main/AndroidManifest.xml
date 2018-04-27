@@ -30,7 +30,9 @@
         <activity android:name=".SignUpActivity" />
         <activity android:name=".AdminorUser" />
         <activity android:name=".Update" />
-        <activity android:name=".ProductUpdate"></activity>
+        <activity android:name=".ProductUpdate">
+        </activity>
+        <activity android:name=".ViewInventory"></activity>
     </application>
 
 </manifest>

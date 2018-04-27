@@ -97,6 +97,33 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         String id = product.getId();
         db = this.getWritableDatabase();
        return db.delete(TABLE_PRODUCT, "ID = ?", new String[] {id});
+
+    }
+
+    public Product dislpay(){
+        db = this.getReadableDatabase();
+        Product product = new Product();
+        Cursor cursor = db.rawQuery("select * from "+ TABLE_PRODUCT, null);
+        String a;
+
+        if (cursor.moveToFirst()) {
+            do {
+                a = cursor.getString(1);
+                if(a != null){
+                    product.setId(cursor.getString(0));
+                    product.setProductName(cursor.getString(1));
+                    product.setQuantity(cursor.getString(2));
+                    product.setPrice(cursor.getString(3));
+                    product.setExpiration(cursor.getString(4));
+                    product.setLocation(cursor.getString(5));
+
+                }
+                return product;
+
+            } while (cursor.moveToNext());
+        }
+        db.close();
+        return product;
     }
 
 }

@@ -14,14 +14,14 @@ public class ManageorView extends AppCompatActivity {
     }
 
 
-    public void onButtonClick (View v){
+    public void onManageButtonClick (View v){
 
         if(v.getId() == R.id.ManageButton){
             Intent i = new Intent(ManageorView.this, AddProduct.class);
             startActivity(i);
         }
-        if(v.getId() == R.id.ViewButton){
-            Intent i = new Intent(ManageorView.this, viewinventory.class);
+        else{
+            Intent i = new Intent(ManageorView.this, ViewInventory.class);
             startActivity(i);
         }
 
