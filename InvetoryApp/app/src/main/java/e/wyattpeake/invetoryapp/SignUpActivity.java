@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class SignUpActivity extends Activity {
     PasswordDataBase helper = new PasswordDataBase(this);
@@ -31,7 +32,7 @@ public class SignUpActivity extends Activity {
             String b = a.getText().toString();
             userName.setUserName(b);
 
-            while (userName.getPassword() == null) {
+            while (userName.getPassword() == null ) {
 
                 a = (EditText) findViewById(R.id.TFPasword);
                 b = a.getText().toString();
@@ -41,6 +42,7 @@ public class SignUpActivity extends Activity {
                 if (confirm.equals(b)) {
                     userName.setPassword(b);
                 }
+
             }
 
             helper.insertUser(userName);
