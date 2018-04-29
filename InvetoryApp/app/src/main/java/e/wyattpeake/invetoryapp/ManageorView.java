@@ -7,7 +7,7 @@ import android.view.View;
 
 public class ManageorView extends AppCompatActivity {
 
-    DataBaseHelper helper = new DataBaseHelper(this);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +22,13 @@ public class ManageorView extends AppCompatActivity {
             Intent i = new Intent(ManageorView.this, AddProduct.class);
             startActivity(i);
         }
-        // (v.getId() == R.id.ViewButton) {
-        else{
+
+    }
+
+    public void onButtonViewlick(View v) {
+
+        if(v.getId() == R.id.ViewButton) {
+
             Intent i = new Intent(ManageorView.this, ViewInventory.class);
             startActivity(i);
         }

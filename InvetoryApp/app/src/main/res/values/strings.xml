@@ -25,4 +25,5 @@
     <string name="emptyStringExp" />
     <string name="ewmptyStringLocation" />
     <string name="emptyStringLocation" />
+    <string name="emptyStringTempName" />
 </resources>
