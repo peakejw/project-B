@@ -50,6 +50,11 @@ public class AddProduct extends Activity {
             Intent i = new Intent(AddProduct.this, WasAdded.class);
             i.putExtra("product", product.getProductName() );
             startActivity(i);
+
+            if(view.getId() == R.id.ExistingProduct){
+                Intent x = new Intent(AddProduct.this, ManageProducts.class);
+                startActivity(x);
+            }
         }
 
        else if(view.getId() == R.id.ExistingProduct){
