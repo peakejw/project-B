@@ -67,7 +67,7 @@
         tools:ignore="OnClick" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/TFupdateName"
         android:layout_width="255dp"
         android:layout_height="57dp"
         android:layout_marginBottom="8dp"

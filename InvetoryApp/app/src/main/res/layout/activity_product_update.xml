@@ -45,9 +45,9 @@
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ID:   "
+                android:text="Location:"
                 android:textSize="18sp" />
 
             <TextView
@@ -69,6 +69,7 @@
                 android:layout_height="wrap_content"
                 android:text="Price: "
                 android:textSize="18sp" />
+
         </TableRow>
 
         <TableRow
@@ -76,28 +77,28 @@
             android:layout_height="match_parent">
 
             <EditText
-                android:id="@+id/TVid"
+                android:id="@+id/TVlocationUpdate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/emptystring1"
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/TVproduct"
-                android:layout_width="wrap_content"
+                android:id="@+id/TVproductUpdate"
+                android:layout_width="8dp"
                 android:layout_height="wrap_content"
                 android:text="@string/emptystring2"
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/TVquantity"
+                android:id="@+id/TVquantityUpdate"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/emptyString3"
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/textView9"
+                android:id="@+id/TVpriceUpdate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/emptyString4"
@@ -106,7 +107,22 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exp: "
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/TVexUpdate"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
@@ -115,15 +131,16 @@
     </TableLayout>
 
     <Button
-        android:id="@+id/UpdateProduct"
+        android:id="@+id/UpdateProductButton"
         android:layout_width="160dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="152dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="onUpdateClick"
         android:text="Update"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

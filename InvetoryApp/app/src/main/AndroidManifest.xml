@@ -34,6 +34,9 @@
         <activity android:name=".ViewInventory">
 
         </activity>
+        <activity android:name=".ItemToBeRemoved">
+
+        </activity>
 
 
     </application>

@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class LogInActivity extends Activity {
    private UserName user = new UserName();
@@ -37,6 +38,9 @@ public class LogInActivity extends Activity {
 
                 Intent i = new Intent(LogInActivity.this, ManageorView.class);
                 startActivity(i);
+            }
+            else{
+                Toast.makeText(LogInActivity.this, " password is incorrect", Toast.LENGTH_LONG).show();
             }
         }
 

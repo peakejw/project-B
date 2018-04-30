@@ -19,7 +19,7 @@ public class ManageorView extends AppCompatActivity {
     public void onButtonManageClick(View v) {
 
         if (v.getId() == R.id.ManageButton) {
-            Intent i = new Intent(ManageorView.this, AddProduct.class);
+            Intent i = new Intent(ManageorView.this, ManageProducts.class);
             startActivity(i);
         }
         // (v.getId() == R.id.ViewButton) {
