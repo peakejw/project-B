@@ -23,7 +23,8 @@ public class ManageorView extends AppCompatActivity {
             startActivity(i);
         }
         // (v.getId() == R.id.ViewButton) {
-        else{
+
+        if (v.getId() == R.id.ViewButton){
             Intent i = new Intent(ManageorView.this, ViewInventory.class);
             startActivity(i);
         }
