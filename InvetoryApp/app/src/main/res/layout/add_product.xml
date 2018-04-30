@@ -101,7 +101,7 @@
             android:id="@+id/ExistingProduct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="OnButtonClick"
+            android:onClick="onGoBackClick"
             android:text=" Update Existing Product" />
     </LinearLayout>
 </LinearLayout>

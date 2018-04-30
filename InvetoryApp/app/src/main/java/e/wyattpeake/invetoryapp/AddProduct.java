@@ -22,7 +22,7 @@ public class AddProduct extends Activity {
         //add all elements to the product then sends them to the database also sends
         //an intent to the wasAdded class to make sure it is added and correct
 
-        if(view.getId() == R.id.Badd) {
+        if (view.getId() == R.id.Badd) {
 
             EditText a = (EditText) findViewById(R.id.TFenterName);
 
@@ -48,15 +48,20 @@ public class AddProduct extends Activity {
             helper.insertProduct(product);
 
             Intent i = new Intent(AddProduct.this, WasAdded.class);
-            i.putExtra("product", product.getProductName() );
+            i.putExtra("product", product.getProductName());
             startActivity(i);
 
+        }
+    }
+
+        public void onGoBackClick(View view){
+
             if(view.getId() == R.id.ExistingProduct){
-                Intent x = new Intent(AddProduct.this, ManageProducts.class);
-                startActivity(x);
+                Intent i = new Intent(AddProduct.this, Update.class);
+                startActivity(i);
             }
         }
 
     }
 
-}
+
