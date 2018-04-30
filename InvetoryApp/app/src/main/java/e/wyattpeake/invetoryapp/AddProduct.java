@@ -57,6 +57,11 @@ public class AddProduct extends Activity {
             }
         }
 
+       else if(view.getId() == R.id.ExistingProduct){
+            Intent i = new Intent(AddProduct.this, ManageProducts.class);
+            startActivity(i);
+        }
+
     }
 
 }
