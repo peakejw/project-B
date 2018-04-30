@@ -5,9 +5,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class WasAdded extends Activity {
     DataBaseHelper helper = new DataBaseHelper(this);
+    Product product = new Product();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -16,7 +18,7 @@ public class WasAdded extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.was_added);
         String search =  getIntent().getStringExtra("product");
-        Product product = new Product();
+
         product =  helper.search(search);
 
 
@@ -46,6 +48,11 @@ public class WasAdded extends Activity {
         if(view.getId() == R.id.Bok){
             Intent i = new Intent(WasAdded.this, ManageProducts.class);
             startActivity(i);
+        }
+
+        if(view.getId() == R.id.removeButton){
+            helper.deleteProduct(product);
+            Toast.makeText(WasAdded.this,product.getProductName()+ " was removed",Toast.LENGTH_LONG).show();
         }
     }
 

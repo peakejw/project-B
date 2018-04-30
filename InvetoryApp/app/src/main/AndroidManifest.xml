@@ -27,11 +27,14 @@
         <activity android:name=".ManageorView" />
         <activity android:name=".RemoveProduct" />
         <activity android:name=".LogInActivity" />
-        <activity android:name=".ViewInventory" />
         <activity android:name=".ProductUpdate" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".AdminorUser" />
         <activity android:name=".Update" />
+        <activity android:name=".ViewInventory">
+
+        </activity>
+
 
     </application>
 
