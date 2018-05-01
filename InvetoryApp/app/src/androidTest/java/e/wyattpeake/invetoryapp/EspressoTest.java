@@ -24,7 +24,7 @@ public class EspressoTest {
     @Test
     public void UserButtonTest() {
         onView(withId(R.id.Blogin)).perform(click());
-        onView(withId(R.id.UserButton)).perform(click());}
+        }
     @Test
     public void BSignUpTest() {
         onView(withId(R.id.Blogin)).perform(click());
@@ -113,8 +113,6 @@ public class EspressoTest {
         onView(withId(R.id.Badd)).perform(click());
         onView(withId(R.id.Bok)).perform(click());
         onView(withId(R.id.updateButton)).perform(click());
-        onView(withId(R.id.editText4)).perform(typeText("Peanut Butter"), click());
-        onView(withId(R.id.UpdateProduct)).perform(click());
-        onView(withId(R.id.UpdateProduct)).perform(click());
+
     }
 }
