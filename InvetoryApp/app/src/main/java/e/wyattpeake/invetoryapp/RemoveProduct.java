@@ -19,7 +19,7 @@ public class RemoveProduct extends AppCompatActivity {
 
     public void onRemoveButtonClick(View v) {
 
-        if(v.getId() == R.id.RPUpdateButton) {
+        if(v.getId() == R.id.RPremove) {
             EditText a = (EditText) findViewById(R.id.ETRemoveText);
 
             String b = a.getText().toString();
